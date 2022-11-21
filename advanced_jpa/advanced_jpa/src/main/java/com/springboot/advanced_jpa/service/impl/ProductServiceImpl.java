@@ -6,9 +6,11 @@ import com.springboot.advanced_jpa.data.dto.ProductResponseDto;
 import com.springboot.advanced_jpa.data.entity.Product;
 import com.springboot.advanced_jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
+@Service
 public class ProductServiceImpl implements ProductService {
     private final ProductDAO productDAO;
 
